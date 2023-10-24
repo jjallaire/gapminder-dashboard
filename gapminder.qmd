@@ -38,22 +38,6 @@ px.area(df, x="year", y="pop", color="continent", line_group="country")
 px.line(df, x="year", y="lifeExp", color="continent", line_group="country")
 ```
 
-# Maps
-
-```{python}
-#| title: GDP Per Capita
-px.choropleth(df, 
-  locations='iso_alpha', color='gdpPercap', hover_name='country', 
-  animation_frame='year', color_continuous_scale=px.colors.sequential.Plasma, projection='natural earth')
-```
-
-```{python}
-#| title: Life Expectancy 
-px.choropleth(df, 
-  locations='iso_alpha', color='lifeExp', hover_name='country', 
-  animation_frame='year', color_continuous_scale=px.colors.sequential.Plasma, projection='natural earth')
-```
-
 # Data
 
 ![](gapminder.png) Learn more about the Gapminder dataset at <https://www.gapminder.org/data/documentation/>
